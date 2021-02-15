@@ -1,0 +1,22 @@
+import org.jbpm.process.core.datatype.impl.type.StringDataType;
+
+[
+        [
+            "name" : "Email",
+            "displayName" : "Email",
+            "category" : "Notification",
+            "description" : "",
+            "parameters" : [
+                  "Reply-To" : new StringDataType(),
+                  "Cc" : new StringDataType(),
+                  "Bcc" : new StringDataType(),
+                  "From" : new StringDataType(),
+                  "To" : new StringDataType(),
+                  "Subject" : new StringDataType(),
+                  "Body" : new StringDataType(),
+                  "Attachments" : new StringDataType(),
+                  "Template" : new StringDataType()
+            ],
+            "icon" : ""
+        ]
+]
