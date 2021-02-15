@@ -1,0 +1,18 @@
+import org.drools.core.process.core.datatype.impl.type.StringDataType;
+
+[
+  [
+    "name" : "My WorkItem",
+    "displayName" : "My WorkItem",
+    "category" : "",
+    "description" : "",
+    "parameters" : [
+      "SampleParam" : new StringDataType(),
+      "SampleParamTwo" : new StringDataType()
+    ],
+    "results" : [
+      "SampleResult" : new StringDataType()
+    ],
+    "icon" : ""
+  ]
+]
