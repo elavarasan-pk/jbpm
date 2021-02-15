@@ -1,0 +1,17 @@
+package com.hi.techpoints.drools
+
+import org.jbpm.workflow.instance.WorkflowProcessInstance;
+
+rule "Blood Pressure Rule"
+ ruleflow-group "bloodpressurerule"
+    when
+        processInstance: WorkflowProcessInstance();
+    then
+     int patientBpRange = (int)processInstance.getVariable("patientBpRange");
+     if(patientBpRange > 120){
+        processInstance.setVariable("bpLevel", "high");
+     } else {
+        processInstance.setVariable("bpLevel", "normal");
+     }
+
+end
