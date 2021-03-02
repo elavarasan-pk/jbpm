@@ -2,11 +2,17 @@
 <configuration>
 
   <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>ERROR</level>
+      <onMatch>DENY</onMatch>
+      <onMismatch>ACCEPT</onMismatch>
+    </filter>
     <encoder>
       <!-- %l lowers performance -->
       <!--<pattern>%d [%t] %-5p %l%n  %m%n</pattern>-->
       <pattern>%d [%t] %-5p %m%n</pattern>
     </encoder>
+    
   </appender>
 
   <logger name="org.jbpm" level="info"/>
