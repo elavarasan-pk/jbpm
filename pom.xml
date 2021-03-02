@@ -13,8 +13,10 @@
 	<description>A sample jBPM Maven project</description>
 
 	<properties>
-		<runtime.version>7.28.0.Final</runtime.version>
-	</properties>
+      <runtime.version>7.46.0.Final</runtime.version>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
 	<repositories>
 		<repository>
